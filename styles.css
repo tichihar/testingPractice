@@ -1,0 +1,297 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+display: block;
+}
+body {
+line-height: 1;
+}
+ol, ul {
+list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+content: none;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+/*---------- CUSTOM CSS STYLES ----------*/
+:root{
+font-size: 8px;
+--header-fonts: 'Julius Sans One', sans-serif;
+--body-fonts: 'Spartan', sans-serif;
+--sage-green: #383E36;
+--light-green: #6F9D75;
+--sienna: #90413B;
+--cream: #F3F4EC;
+}
+/*---------- SMALL SCREEN / GLOBAL STYLES ----------*/
+body {
+font-family: var(--body-fonts);
+background-color: var(--sienna);
+color: var(--light-green);
+box-sizing: border-box;
+text-align: center;
+}
+header{
+background-color: var(--cream);
+color: var(--light-green);
+padding: 2rem 0 1rem 0;
+}
+main, footer{
+padding: 1rem;
+width: calc(100% - 2rem);
+}
+h1, h2, h3{
+font-family: var(--header-fonts);
+font-weight: bold;
+text-align: center;
+padding: 0 1rem;
+}
+h1 {
+font-size: 3rem;
+margin: 0 0 1rem 0;
+}
+h2{
+font-size: 2rem;
+margin: 0.75rem 0.25rem;
+}
+h3{
+font-size: 1.75rem;
+margin: 2rem 0.25rem 1rem 0.25rem;
+}
+#catering h3{
+margin-top: 1rem;
+}
+nav{
+width: 100%;
+margin: 0 auto;
+border-top: 1px solid var(--sage-green);
+}
+.sr-only {
+position: absolute;
+left: -10000px;
+top: auto;
+width: 1px;
+height: 1px;
+overflow: hidden;
+}
+nav ul{
+width: 100%;
+}
+nav li {
+list-style-type: none;
+}
+a{
+font-family: var(--body-fonts);
+font-size: 1.2rem;
+display: block;
+text-align: center;
+text-decoration: none;
+}
+nav a {
+color: var(--light-green);
+border-top: 1px solid var(--sage-green);
+border-bottom: 1px solid var(--sage-green);
+}
+li a:first-of-type{
+border-top: none;
+}
+main {
+width: 100%;
+margin: 1rem auto;
+padding: 1rem 0;
+background-color: var(--sienna);
+}
+img{
+display: block;
+width: 100%;
+}
+#hero{
+max-width: 1400px;
+margin: 1rem auto;
+}
+main a{
+background-color: var(--cream);
+color: var(--sage-green);
+text-decoration: none;
+margin: 0 auto;
+}
+main a:hover {
+background-color: var(--sage-green);
+color: var(--cream);
+}
+section{
+background-color: var(--sage-green);
+padding: 2rem 0;
+margin: 1rem auto;
+}
+#catering, #contact{
+width: 100%;
+margin: 2rem auto 0 auto;
+}
+p{
+font-size: 1.1rem;
+padding: 1rem;
+margin: 0 auto;
+}
+main p, label, input, legend{
+font-size: 1.15rem;
+}
+form{
+margin: 0 auto;
+}
+input, label, select, textarea{
+display: block;
+width: 90%;
+}
+label{
+margin-top: 1rem;
+}
+input, select, textarea{
+background-color: var(--cream);
+border: 2px solid var(--light-green);
+}
+input[type=text], input[type=email], input[type=tel]{
+height: 2rem;
+}
+select{
+height: 2.5rem;
+width: 95%;
+}
+fieldset{
+width: 295px;
+display: grid;
+grid-template-columns: 1fr 8fr;
+gap: 0.5rem;
+align-items: end;
+margin: 1rem 0;
+}
+legend{
+grid-column: 1/-1;
+}
+input[type=radio]{
+margin-bottom: 0.25rem
+}
+fieldset label{
+margin-top: 0;
+}
+textarea{
+height: 4rem;
+}
+input[type=submit]{
+font-family: var(--body-fonts);
+font-size: 1.2rem;
+display: block;
+width: 200px;
+background-color: var(--cream);
+color: var(--sage-green);
+padding: 1rem;
+margin: 1rem auto;
+text-align: center;
+}
+input[type=submit]:hover, input[type=submit]:focus{
+background-color: var(--sienna);
+color: var(--cream);
+}
+footer{
+text-align: center;
+}
+footer span{
+display: block;
+font-size: 1.5rem;
+font-family: var(--header-fonts);
+padding: 0.5rem;
+margin: 0 auto 2rem auto;
+border-top: 1px solid var(--cream);
+border-bottom: 1px solid var(--cream);
+}
+small{
+display: block;
+font-size: 1rem;
+padding: 1rem;
+}
+/*---------- MEDUIUM SCREEN STYLES ----------*/
+@media screen and (min-width: 525px){
+nav{
+border: none;
+}
+nav ul{
+display: grid;
+grid-template-columns: 1fr 1fr;
+}
+nav a{
+border: none;
+}
+}
+/*---------- LARGE SCREEN STYLES ----------*/
+@media screen and (min-width: 800px){
+main, form{
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 1rem;
+}
+#hero, #contact, h2, #catering{
+grid-column: 1/-1;
+margin: 0;
+}
+.btnLink{
+grid-column: 1/-1;
+margin-bottom: 1.5rem;
+}
+section{
+margin: 0;
+}
+form{
+margin: 0 auto;
+}
+form div{
+padding: 0.5rem;
+}
+input, textarea, select{
+margin: 0 auto;
+}
+fieldset{
+grid-template-columns: 1fr 8fr 1fr 8fr;
+}
+legend{
+margin-bottom: 0.75rem;
+}
+fieldset input:first-of-type{
+margin-left: 1rem;
+}
+#mySubmit{
+grid-column: 1/-1;
+margin-left: 75%;
+}
+}
